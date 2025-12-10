@@ -61,12 +61,12 @@ export default function ProjectsPage() {
                   <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.techStack.map((t: any) => (
+                    {project.techStack.map((t: unknown) => (
                       <span
-                        key={t}
+                        key={String(t)}
                         className="text-xs px-2 py-1 rounded bg-primary/10 text-primary"
                       >
-                        {t}
+                        {String(t)}
                       </span>
                     ))}
                   </div>

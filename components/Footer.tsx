@@ -21,7 +21,7 @@ export default function Footer() {
 
         {/* LEFT SIDE — Branding */}
         <div>
-          <h2 className="text-3xl font-bold">Let's Build Something Together</h2>
+          <h2 className="text-3xl font-bold"> Let&apos;s Build Something Together</h2>
           <p className="text-gray-400 mt-4 leading-relaxed">
             Have a project in mind, need a developer, or want to collaborate?
             Fill the form — I’ll reply within 24 hours.
