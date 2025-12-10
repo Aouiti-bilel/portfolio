@@ -1,9 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
 import Slider from "react-slick";
-import ModulesHero from "@/components/ModulesHero";
-import ProjectsHero from "@/components/ProjectsHero";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { projects } from "@/data/projects";
 import { Github, Globe } from "lucide-react";
 import Image from "next/image";
@@ -65,7 +61,7 @@ export default function ProjectsPage() {
                   <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.techStack.map((t) => (
+                    {project.techStack.map((t: any) => (
                       <span
                         key={t}
                         className="text-xs px-2 py-1 rounded bg-primary/10 text-primary"
