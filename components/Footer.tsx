@@ -3,8 +3,17 @@
 import { useActionState } from "react";
 import { sendMail } from "@/app/actions/sendEmail";
 
+// Define the expected shape of the action result
+export interface ContactFormState {
+  success?: boolean;
+  error?: string;
+}
+
 export default function Footer() {
-  const [state, formAction, pending] = useActionState(sendMail, {});
+  const [state, formAction, pending] = useActionState<ContactFormState, FormData>(
+    sendMail,
+    {}
+  );
 
   return (
     <footer className="mt-24 bg-black text-white py-20 border-t border-white/10">
@@ -20,8 +29,10 @@ export default function Footer() {
         </div>
 
         {/* RIGHT SIDE — Contact Form */}
-        <form action={formAction} className="space-y-5 bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-lg">
-
+        <form
+          action={formAction}
+          className="space-y-5 bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-lg"
+        >
           {state?.success && (
             <p className="text-green-400 font-medium">
               ✓ Your message has been sent successfully!
@@ -37,12 +48,15 @@ export default function Footer() {
               name="name"
               placeholder="Your Name"
               className="input input-bordered w-full bg-white/10 border-white/20 text-white"
+              required
             />
+
             <input
               name="email"
               type="email"
               placeholder="Your Email"
               className="input input-bordered w-full bg-white/10 border-white/20 text-white"
+              required
             />
           </div>
 
@@ -51,6 +65,7 @@ export default function Footer() {
             placeholder="Your Message"
             rows={4}
             className="textarea textarea-bordered w-full bg-white/10 border-white/20 text-white"
+            required
           />
 
           <button
