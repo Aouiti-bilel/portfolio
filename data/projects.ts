@@ -9,11 +9,10 @@ export const projects: Project[] = [
     title: "Vitasoins",
     description:
       "Medical booking platform with appointment scheduling, practitioner profiles, and secure authentication.",
-    coverImage: "/projects/vitasoins/vitasoins-public.png",
-    image: "/projects/vitasoins/vitasoins-admin.png",
+    coverImage: "/projects/vitasoins-admin.png",
     gallery: [
-      "/projects/vitasoins/vitasoins-public.png",
-      "/projects/vitasoins/vitasoins-admin.png",
+      "/projects/vitasoins-public.png",
+      "/projects/vitasoins-admin.png",
     ],
     github: "https://github.com/Aouiti-bilel/vitasoins",
     website: "https://vitasoins.fly.dev/",
