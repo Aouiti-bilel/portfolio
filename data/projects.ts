@@ -9,7 +9,7 @@ export const projects: Project[] = [
     title: "Vitasoins",
     description:
       "Medical booking platform with appointment scheduling, practitioner profiles, and secure authentication.",
-    coverImage: "/projects/vitasoins-admin.png",
+    coverImage: "/projects/vitasoins-public.png",
     gallery: [
       "/projects/vitasoins-public.png",
       "/projects/vitasoins-admin.png",
