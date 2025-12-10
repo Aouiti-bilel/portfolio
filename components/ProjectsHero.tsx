@@ -11,12 +11,16 @@ export default function ProjectsPage() {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 6000,
     arrows: false,
     responsive: [
+      {
+        breakpoint: 1920,
+        settings: { slidesToShow: 3 },
+      },
       {
         breakpoint: 1400,
         settings: { slidesToShow: 3 },
