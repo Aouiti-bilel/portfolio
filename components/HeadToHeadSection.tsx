@@ -87,7 +87,6 @@ export default function HeadToHeadSlick() {
             <div className="absolute top-0 left-0 w-64 h-64 bg-purple-200/20 rounded-full blur-3xl animate-pulse-slow"></div>
             <div className="absolute bottom-0 right-0 w-72 h-72 bg-blue-200/20 rounded-full blur-3xl animate-pulse-slow"></div>
 
-            {/* Title */}
             <div className="text-center mb-12 relative z-10">
                 <h2 className="text-4xl font-bold mb-2">Head-to-Head Comparisons</h2>
                 <p className="text-gray-500 dark:text-gray-400 max-w-xl mx-auto">
