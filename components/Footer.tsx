@@ -1,37 +1,22 @@
-"use client";
-
-import { useActionState } from "react";
-import { sendMail } from "@/app/actions/sendEmail";
-
-// Define the expected shape of the action result
-export interface ContactFormState {
-  success?: boolean;
-  error?: string;
-}
-
 export default function Footer() {
-  const [state, formAction, pending] = useActionState<ContactFormState, FormData>(
-    sendMail,
-    {}
-  );
-
   return (
-    <footer className="mt-24 bg-black text-white py-20 border-t border-white/10">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+    <footer className="border-t mt-20 py-8">
+      <div className="container mx-auto px-4 flex flex-col items-center gap-6">
 
-        {/* LEFT SIDE — Branding */}
-        <div>
-          <h2 className="text-3xl font-bold"> Let&apos;s Build Something Together</h2>
-          <p className="text-gray-400 mt-4 leading-relaxed">
-            Have a project in mind, need a developer, or want to collaborate?
-            Fill the form — I’ll reply within 24 hours.
+        {/* Opportunity Note */}
+        <div className="w-full max-w-2xl bg-yellow-100 dark:bg-yellow-900/40 border-l-4 border-yellow-500 dark:border-yellow-600 p-4 rounded-md shadow-md">
+          <h3 className="font-semibold text-yellow-800 dark:text-yellow-200 text-lg">
+            🧑‍💻 Available for Backend / Full-Stack Roles
+          </h3>
+          <p className="text-yellow-700 dark:text-yellow-300 text-sm mt-1">
+            I’m open to full-time, contract, or freelance opportunities.
           </p>
         </div>
-      </div>
 
-      {/* Bottom Bar */}
-      <div className="mt-10 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} • All Rights Reserved.
+        {/* Copyright */}
+        <p className="text-sm text-muted-foreground text-center">
+          © {new Date().getFullYear()} Bilel Laouiti. All rights reserved.
+        </p>
       </div>
     </footer>
   );
