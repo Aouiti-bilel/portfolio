@@ -49,7 +49,7 @@ export default function DocumentationPreview() {
       {openModal === "middleware-nodejs" && <Article2Modal onClose={() => setOpenModal(null)} />}
       {openModal === "subscriptions-socketio" && <Article3Modal onClose={() => setOpenModal(null)} />}
       {openModal === "file-uploads-express-graphql" && <Article4Modal onClose={() => setOpenModal(null)} />}
-      <section className="container mx-auto px-4 py-16 bg-gray-50 dark:bg-neutral-900 rounded-xl">
+      <section className="container mx-auto px-4 my-16 py-16 bg-gray-50 dark:bg-neutral-900 rounded-xl">
         <h2 className="text-3xl font-bold mb-8">Documentation & Tutorials</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {docs.map((doc) => (

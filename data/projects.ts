@@ -16,7 +16,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/Aouiti-bilel/vitasoins",
     website: "https://vitasoins.fly.dev/",
-    techStack: ["React", "Node.js", "Express", "Tailwind"],
+    techStack: ["Remix.js", "Node.js", "Express", "BootstrapCSS"],
     features: [
       "Appointment system",
       "Medical practitioner profiles",
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     gallery: [],
     github: "https://github.com/yourname/pickbazar-ecommerce",
     website: "https://pickbazar-react-rest.vercel.app/shops/furniture-shop",
-    techStack: ["Next.js", "GraphQL", "Tailwind"],
+    techStack: ["Next.js", "GraphQL", "Redux"],
     features: [
       "Product catalog",
       "Cart & checkout system",
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     gallery: [],
     github: "https://github.com/yourname/origin-intranet",
     website: "https://origin-intranet.com",
-    techStack: ["Node.js", "Express", "React", "Socket.io"],
+    techStack: ["Node.js", "Express", "React", "Socket.io", "GraphQL", "Redux", "Mui", "MySQL" ],
     features: [
       "Real-time communication (socket/subscriptions)",
       "Investigation workflows",

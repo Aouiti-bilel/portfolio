@@ -27,54 +27,6 @@ export default function Footer() {
             Fill the form — I’ll reply within 24 hours.
           </p>
         </div>
-
-        {/* RIGHT SIDE — Contact Form */}
-        <form
-          action={formAction}
-          className="space-y-5 bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-lg"
-        >
-          {state?.success && (
-            <p className="text-green-400 font-medium">
-              ✓ Your message has been sent successfully!
-            </p>
-          )}
-
-          {state?.error && (
-            <p className="text-red-400 font-medium">{state.error}</p>
-          )}
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input
-              name="name"
-              placeholder="Your Name"
-              className="input input-bordered w-full bg-white/10 border-white/20 text-white"
-              required
-            />
-
-            <input
-              name="email"
-              type="email"
-              placeholder="Your Email"
-              className="input input-bordered w-full bg-white/10 border-white/20 text-white"
-              required
-            />
-          </div>
-
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows={4}
-            className="textarea textarea-bordered w-full bg-white/10 border-white/20 text-white"
-            required
-          />
-
-          <button
-            disabled={pending}
-            className="btn btn-primary w-full rounded-xl disabled:opacity-50"
-          >
-            {pending ? "Sending..." : "Send Message"}
-          </button>
-        </form>
       </div>
 
       {/* Bottom Bar */}

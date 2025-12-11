@@ -11,6 +11,12 @@ export default function ContactPage() {
     message: "",
   });
 
+  const me = {
+    email: "khelifa.bilel1@outlook.fr",
+    phone: "+216 ",
+    linkedin: "www.linkedin.com/in/bilel-laouiti-ba697a15b",
+    github: "https://github.com/Aouiti-bilel",
+  }
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-[#0d0d0d] dark:to-[#111] py-24">
       <div className="max-w-5xl mx-auto px-6">
@@ -49,28 +55,28 @@ export default function ContactPage() {
             <div className="mt-8 space-y-6">
               <div className="flex items-center gap-4">
                 <FiMail className="text-xl text-primary" />
-                <a href="mailto:your@email"
-                   className="text-gray-700 dark:text-gray-200 hover:underline">
-                  your@email
+                <a href={`mailto:${me.email}`}
+                  className="text-gray-700 dark:text-gray-200 hover:underline">
+                  {me.email}
                 </a>
               </div>
 
               <div className="flex items-center gap-4">
                 <FiPhone className="text-xl text-primary" />
-                <a href="tel:+216XXXXXXXX"
-                   className="text-gray-700 dark:text-gray-200 hover:underline">
-                  +216 XX XXX XXX
+                <a href={`tel:${me.phone}`}
+                  className="text-gray-700 dark:text-gray-200 hover:underline">
+                  {me.phone}
                 </a>
               </div>
 
               <div className="flex items-center gap-4">
                 <FiLinkedin className="text-xl text-primary" />
-                <a href="https://linkedin.com" className="hover:underline">LinkedIn</a>
+                <a href={`https://${me.linkedin}`} className="hover:underline"> {me.linkedin} </a>
               </div>
 
               <div className="flex items-center gap-4">
                 <FiGithub className="text-xl text-primary" />
-                <a href="https://github.com" className="hover:underline">GitHub</a>
+                <a href={me.github} className="hover:underline"> {me.github} </a>
               </div>
             </div>
           </motion.div>
@@ -92,11 +98,10 @@ export default function ContactPage() {
             {/* STATUS */}
             {state.message && (
               <p
-                className={`text-sm p-3 rounded-lg ${
-                  state.ok
-                    ? "bg-green-500/20 text-green-700 dark:text-green-300"
-                    : "bg-red-500/20 text-red-700 dark:text-red-300"
-                }`}
+                className={`text-sm p-3 rounded-lg ${state.ok
+                  ? "bg-green-500/20 text-green-700 dark:text-green-300"
+                  : "bg-red-500/20 text-red-700 dark:text-red-300"
+                  }`}
               >
                 {state.message}
               </p>
