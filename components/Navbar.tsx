@@ -15,15 +15,15 @@ export default function Navbar() {
 
   return (
     <>
-<nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-5xl px-4 ">
-  <div
-    className={classNames(
-      'w-full flex items-center justify-between rounded-full px-8 py-3 shadow-lg backdrop-blur-xl transition-all',
-      isDark
-        ? 'bg-white/10 text-white border border-white/20'
-        : 'bg-black/10 text-black border border-black/10'
-    )}
-  >
+      <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-5xl px-4 ">
+        <div
+          className={classNames(
+            'w-full flex items-center justify-between rounded-full px-8 py-3 shadow-lg backdrop-blur-xl transition-all',
+            isDark
+              ? 'bg-white/10 text-white border border-white/20'
+              : 'bg-black/10 text-black border border-black/10'
+          )}
+        >
           {/* LOGO */}
           <Link href="/" className="font-semibold text-lg tracking-tight">
             Bilel Laouiti
@@ -67,8 +67,7 @@ export default function Navbar() {
           >
             <div className="flex flex-col space-y-4 text-sm">
               <Link href="/" className="hover:opacity-70 transition">Home</Link>
-              <Link href="/about" className="hover:opacity-70 transition">About</Link>
-              <Link href="/blog" className="hover:opacity-70 transition">Blog</Link>
+              <Link href="/contact" className="hover:opacity-70 transition">Contact</Link>
             </div>
           </div>
         )}
