@@ -60,9 +60,9 @@ export const projects: Project[] = [
       "React + GraphQL ecommerce platform with full cart, checkout, admin dashboard, and product management.",
     coverImage: "/projects/pickbazar.png",
     gallery: [],
-    github: "https://github.com/yourname/pickbazar-ecommerce",
+    github: "https://github.com/Aouiti-bilel/NextS-shop",
     website: "https://pickbazar-react-rest.vercel.app/shops/furniture-shop",
-    techStack: ["Next.js", "GraphQL", "Redux"],
+    techStack: ["Next.js", "GraphQL", "Redux", "NestJS", "TypeOrm", "PostgreSQL"],
     features: [
       "Product catalog",
       "Cart & checkout system",
@@ -83,7 +83,7 @@ export const projects: Project[] = [
       "Enterprise intranet platform for disaster investigation teams — built with Node/Express backend and React interfaces.",
     coverImage: "/projects/origin.png",
     gallery: [],
-    github: "https://github.com/yourname/origin-intranet",
+    github: "https://github.com/Aouiti-bilel/Tekru_ORIGIN",
     website: "https://origin-intranet.com",
     techStack: ["Node.js", "Express", "React", "Socket.io", "GraphQL", "Redux", "Mui", "MySQL" ],
     features: [
@@ -105,8 +105,8 @@ export const projects: Project[] = [
       "Customer-facing food delivery mobile application built with React Native + TypeScript to place and track food orders.",
     coverImage: "/projects/new-food.png",
     gallery: [],
-    github: "https://github.com/yourname/new-food",
-    website: "https://new-food.com",
+    github: "https://github.com/Aouiti-bilel/Food-delivery-Mobile-App",
+    website: "https://www.facebook.com/Newfood.tn/?locale=fr_FR",
     techStack: ["React Native", "TypeScript", "REST/GraphQL"],
     features: [
       "Order tracking",
